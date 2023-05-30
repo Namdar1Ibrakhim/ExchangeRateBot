@@ -1,0 +1,25 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/accout
+        username: postgres
+        password: Ibrakhim2004
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+                globally_quoted_identifiers: true
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+bot:
+    name: SDU_infoBot
+    token: 5586134628:AAHhZNOCKiQr1h6lpnxB5NxFZsyIEOhyd-Y
+
+
+name:
+    service:
+        url: https://api.currencyfreaks.com/v2.0/rates/latest?apikey=af1e6829a95a423d9988e9ca0915143c
